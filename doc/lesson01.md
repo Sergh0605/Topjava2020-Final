@@ -21,11 +21,11 @@
 - [Презентация Java 8](https://docs.google.com/presentation/d/1oltLkHK60FqIdsXjUdm4pPLSeC6KpNYjDsM0ips-qBw)
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=1K0kan7TEUeOAe_qcdCtRF9rsqD-NwFZ7">Работа с git в IDEA. Реализация через цикл.</a>
-**ВНИМАНИЕ! Патчей `1_2_HW0_cycles` и `1_3_HW0_optional2` не будет в проекте! Делаем в отдельной ветке (у меня `MealsUtil_opt`). Это варианты решений, которые не идут в `master`.**
+**ВНИМАНИЕ! Патчей `1_2_cycles_HW0` и `1_3_opt2_HW0` не будет в проекте! Делаем в отдельной ветке (у меня `MealsUtil_opt`). Это варианты решений, которые не идут в `master`.**
 
 ![image](https://user-images.githubusercontent.com/13649199/83656711-8b758b00-a5c8-11ea-9de4-c2ade77d4598.png)
 
-#### Apply 1_2_HW0_cycles.patch
+#### Apply 1_2_cycles_HW0.patch
 
 ### ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Вопросы по HW0
 
@@ -39,7 +39,7 @@
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. <a href="https://drive.google.com/open?id=1aq3hDmUUdWJujsX6zTqookJjXWOD3PBJ">HW0 Optional 2: реализация в один проход и одной строкой Stream API</a>
 
-#### Apply 1_3_HW0_optional2.patch
+#### Apply 1_3_opt2_HW0.patch
 - [VK: Java программист: от новичка до профессионала](https://vk.com/javawebinar)
 - Дополнительно:
   - [Первое занятие MasterJava: многопоточность](https://github.com/JavaOPs/masterjava)
@@ -215,7 +215,7 @@ JSF- sun-овский еще фреймворк, с которым я ни ра�
 
 ### Optional
 #### 2. Реализуем в ПАМЯТИ CRUD (create/read/update/delete) для еды
-**Пример: <a href="http://danielniko.com/2012/04/17/simple-crud-using-jsp-servlet-and-mysql/">Simple CRUD using Servlet/JSP</a>**
+**Пример: [Simple CRUD using Servlet/JSP](https://danielniko.wordpress.com/2012/04/17/simple-crud-using-jsp-servlet-and-mysql)**
 > - Пример нужно САМОСТОЯТЕЛЬНО переделать: вместо хранения в MySql нужно хранить в ПАМЯТИ (задание упрощается).
 > - Классы: сервлет, инрерфейс хранения, его реализация для хранения в памяти
 - 2.1 Хранение в памяти будет одна из наших CRUD реализаций (позже будет JDBC, JPA и DATA-JPA).
