@@ -140,6 +140,7 @@
 >   - [What is the fastest way of (not) logging](https://www.slf4j.org/faq.html#logging_performance)
 
 - <a href="http://habrahabr.ru/post/113145/">Java Logging: история кошмара</a>
+- [JavaRush: Logger](https://javarush.ru/quests/lectures/questcollections.level04.lecture09)
 - <a href="http://skipy.ru/useful/logging.html">Ведение лога приложения</a>
 - <a href="http://logging.apache.org/log4j/2.x/index.html">Log4j</a>, <a href="http://logback.qos.ch/">Logback</a>
 - <a href="http://www.slf4j.org/legacy.html">Добавление зависимостей логирования</a> в проект.
