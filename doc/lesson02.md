@@ -30,7 +30,7 @@
 > - Поправил `InMemoryMealRepository.save()`. Если обновляется еда, которой нет в хранилище (c несуществующим id), вставка не происходит.
 > - В `MealServlet.doGet()` сделал выбор через `switch`
 > - В местах, где требуется `int`, заменил `Integer.valueOf()` на `Integer.parseInt()`
-> - В `meal.jsp` использую <a href="http://stackoverflow.com/questions/1890438/how-to-get-parameters-from-the-url-with-jsp#1890462">параметр запроса `param.action`</a>, который не кладется в атрибуты.
+> - В `mealForm.jsp` использую <a href="http://stackoverflow.com/questions/1890438/how-to-get-parameters-from-the-url-with-jsp#1890462">параметр запроса `param.action`</a>, который не кладется в атрибуты.
 > - Переименовал `mealEdit.jsp` в `mealForm.jsp`. Поля ввода формы добавил `required`
 > - Пофиксил багу c `history.back()` в `mealForm.jsp` для **FireFox** (коммит формы при Cancel, сделал `type="button"`).
 
