@@ -225,7 +225,8 @@
   - 2.5: Не дублируйте код в `getAll` и метод с фильтрацией
   - 2.6: попробуйте учесть, что следующая реализация (сортировка, фильтрация) будет делаться прямо в базе данных
 - 3: Проверьте, что удалили `Meal.id` и связанные с ним методы (он уже есть в базовом `BaseEntity`)
-- 4: Проверку `isBetweenHalfOpen` с датами сделать в `DateTimeUtil`. Если фильтруете по `LocalTime` и `LocalDateTime`, попробуйте использовать один метод и дженерики (см. [Generics Tutorials](https://docs.oracle.com/javase/tutorial/extra/generics/morefun.html))
+- 4: Проверку `isBetweenHalfOpen` с датами сделать в `DateTimeUtil`. Если фильтруете по `LocalTime` и `LocalDateTime`, попробуйте использовать один метод и дженерики (см. [Generics Tutorials](https://docs.oracle.com/javase/tutorial/extra/generics/morefun.html) и 
+[Погружаемся в Java Generics](https://habr.com/ru/company/sberbank/blog/416413/))
 - 5: **Реализация 'MealRestController' должен уметь обрабатывать запросы**:
   - 5.1: Отдать свою еду (для отображения в таблице, формат `List<MealTo>`), запрос БЕЗ параметров
   - 5.2: Отдать свою еду, отфильтрованную по startDate, startTime, endDate, endTime
