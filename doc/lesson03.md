@@ -26,6 +26,7 @@
 - сделал базовый `InMemoryBaseRepository` 
 - наследую от него `InMemoryUserRepository`
 - использую его в `InMemoryMealRepository` вместо `Map<Integer, Meal>`
+
 Обратите внимание на `InMemoryBaseRepository.counter` - счетчик один, общий для всех хранимых объектов
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4. [HW2 Optional](https://drive.google.com/file/d/1yzNvGBgjgtuKXDFo983OqtTNoHDbyn1z)
