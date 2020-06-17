@@ -26,12 +26,12 @@
 - сделал базовый `InMemoryBaseRepository` 
 - наследую от него `InMemoryUserRepository`
 - использую его в `InMemoryMealRepository` вместо `Map<Integer, Meal>`
-- обратите внимание на `InMemoryBaseRepository.counter` - счетчик один, общий для всех хранимых объектов
+Обратите внимание на `InMemoryBaseRepository.counter` - счетчик один, общий для всех хранимых объектов
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4. [HW2 Optional](https://drive.google.com/file/d/1yzNvGBgjgtuKXDFo983OqtTNoHDbyn1z)
 #### Apply 3_05_HW2_optional_MealServlet.patch
-- Убрал логирование (уже есть в контроллере)
-- `assureIdConsistent` позволяет в контроллере обновлять еду с `id=null`
+> - Убрал логирование (уже есть в контроллере)
+> - `assureIdConsistent` позволяет в контроллере обновлять еду с `id=null`
 
 #### Apply 3_06_HW2_optional_filter.patch
 - [JSP Implicit Objects](https://stackoverflow.com/a/1890462/548473)
@@ -54,7 +54,7 @@
 ## Занятие 3:
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFOU8wWlpPVE05STA">Коротко о жизненном цикле Spring контекста.</a>
 #### Apply 3_08_bean_life_cycle.patch
-> На JDK 11 перейдем в 5 занятии. Если у вас JDK больше 8, [добавьте в pom `javax.annotation-api`](https://stackoverflow.com/a/46502132/548473)
+> На JDK 11/14 перейдем в 5 занятии. Если у вас JDK больше 8, [добавьте в pom `javax.annotation-api`](https://stackoverflow.com/a/46502132/548473)
 
 -  <a href="http://habrahabr.ru/post/222579/">Spring изнутри. Этапы инициализации контекста.</a>
 -  Ресурсы:
@@ -66,7 +66,6 @@
 
 - все классы, которые не нужны при работе приложения переносятся в test (и не включаются в сборку)
 - в тестах очень частая ошибка - менять местами `expected` (ожидаемое) и `actual` (фактическое) значения.
-
 - [Регрессионное тестирование](https://ru.wikipedia.org/wiki/Регрессионное_тестирование)
 - [Разработка через тестирование](https://ru.wikipedia.org/wiki/Разработка_через_тестирование)
 - [Тестирование Java кода с помощью JUnit](http://www.javenue.info/post/19)
