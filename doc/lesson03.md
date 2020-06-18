@@ -10,6 +10,9 @@
  - [Оптимизация анонимных классов](http://stackoverflow.com/questions/19718353/548473) не требуется! Почитайте комменты от Holger: *Java 8 relieves us from the need to think about such things at all*.
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. [Фильтрация в репозитории](https://drive.google.com/file/d/1C3-a_3YIjuLW-lu9Ds7LwLVaikmyS1bQ)
+Метод `MealRepository.getBetweenHalfOpen` мы используем в следующем патче для фильтрации по целым дням.  
+Используем `LocalDateTime` вместо `LocalDate` с прицелом на то, что в DB тип даты - `timestamp`.
+
 #### Apply 3_02_HW2_repo_filters.patch
  - [Spring `@Nullable` аннотации](https://www.jetbrains.com/help/idea/nullable-and-notnull-annotations.html)
  
