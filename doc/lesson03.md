@@ -7,7 +7,10 @@
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 1. [Реализация репозиториев](https://drive.google.com/file/d/1qrCPqIQlEonGtMUApdb8oRFOuO3kZye8)
 
 #### Apply 3_01_HW2_repositories.patch
+После патча ломается `MealServlet` (в видео говорится). Починим в `3_05_HW2_optional_MealServlet.patch`
+
  - [Оптимизация анонимных классов](http://stackoverflow.com/questions/19718353/548473) не требуется! Почитайте комменты от Holger: *Java 8 relieves us from the need to think about such things at all*.
+
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. [Фильтрация в репозитории](https://drive.google.com/file/d/1C3-a_3YIjuLW-lu9Ds7LwLVaikmyS1bQ)
 Метод `MealRepository.getBetweenHalfOpen` мы используем в следующем патче для фильтрации по целым дням.  
