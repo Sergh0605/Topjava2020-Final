@@ -243,7 +243,7 @@ UNIQUE индекс нужен для обеcпечения уникальнос
 ## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW03
 - 1 Понять, почему перестали работать `SpringMain, InMemoryAdminRestControllerTest, InMemoryAdminRestControllerSpringTest`. Чиним в Optional.
 - 2 Дополнить скрипты создания и инициализации базы таблицой MEALS. Запустить скрипты на вашу базу (через Run). Порядок таблиц при DROP и DELETE важен, если они связаны внешними ключами (foreign key, fk). Проверьте, что ваши скрипты работают.
-   - 2.1 Сделать индексы к таблице `Meals`: запретить создавать у одного и того-же юзера еду с одинаковой dateTime.
+   - 2.1 Сделать индексы к таблице `meals`: запретить создавать у одного и того-же юзера еду с одинаковой dateTime.
 Индекс на pk (id) postgres создает автоматически: [Postgres and Indexes on Foreign Keys and Primary Keys](http://stackoverflow.com/questions/970562/548473)
   - [Индекс_базы_данных](https://ru.wikipedia.org/Индекс_(базы_данных))
   - [PostgreSQL: индексы](https://postgrespro.ru/docs/postgresql/10/indexes-intro)
