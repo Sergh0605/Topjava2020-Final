@@ -29,6 +29,9 @@
 - [Оптимизация запросов. Часть 2](https://habrahabr.ru/post/203386/)
 - [Оптимизация запросов. Часть 3](https://habrahabr.ru/post/203484/)
 - [Документация Postgres: индексы](https://postgrespro.ru/docs/postgresql/9.6/indexes.html)
+## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Разбор домашнего задания HW3
+
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. [HW03 Optional: Meals tests](https://drive.google.com/file/d/1RfO0Irz8ayw2ivnjffUol20BQrKpu-jg)
 
 #### **Apply 4_2_HW3_optional.patch**
 
@@ -39,7 +42,7 @@
 - [Вызов статического метода из конфигурации спринга](https://stackoverflow.com/a/27296470/548473) 
 
 ## Занятие 4:
-### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFU005ZzBNZmZnTVU">Методы улучшения качества кода</a>
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFU005ZzBNZmZnTVU">Методы улучшения качества кода</a>
 - Добавьте в своем `readme.md` сверху две строчки `Codacy Badge` и `Build Status`, по аналогии c моим [README.md](https://github.com/JavaWebinar/topjava/blob/master/README.md) ([Raw](https://raw.githubusercontent.com/JavaWebinar/topjava/master/README.md)). `Codacy Badge` берется с сайта `codacy -> Settings`
   - <a href="https://www.codacy.com">Codacy Check code</a> (проверка стиля и поиск багов в коде).
      - добавил [Codacy configuration file](https://support.codacy.com/hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis) для ислючения из проверок содержимого `webapp` и `READ.me` (на нашем проекте он выдает на них кучу ошибок)
@@ -62,15 +65,15 @@
   - Tools -> QAPlug -> Analyze Code...
 - IDEA [Analyze | Inspect Code](https://www.jetbrains.com/help/idea/running-inspections.html)
 
-### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. <a href="https://drive.google.com/open?id=1faq0dtek-RcBENfISkod35PGU5jcuOsB">Spring: инициализация и популирование DB</a>
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4. <a href="https://drive.google.com/open?id=1faq0dtek-RcBENfISkod35PGU5jcuOsB">Spring: инициализация и популирование DB</a>
 #### **Apply 4_6_init_and_populate_db.patch**
 -  [Инициализация базы при старте приложения](https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#jdbc-initializing-datasource-xml)
 
-### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNTNWV04weDBGSmc">Подмена контекста при тестировании</a>
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNTNWV04weDBGSmc">Подмена контекста при тестировании</a>
 #### **Apply 4_7_create_inmemory_test_ctx.patch**
 > Переименовал `mock.xml` в `inmemory.xml`
 
-### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVWZYcHoyUF9qX2M">ORM. Hibernate. JPA.</a>
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 6. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVWZYcHoyUF9qX2M">ORM. Hibernate. JPA.</a>
 <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity</a>- класс (объект Java), который в ORM маппится в таблицу DB.
 
 > - ВНИМАНИЕ: патч меняет `postgres.properties`, в котором у вас возможно свои креденшелы к базе.
@@ -139,7 +142,7 @@
    - <a href="https://ru.wikipedia.org/wiki/MVCC">MVCC</a>
 
 
-###  ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 6. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFSTJEQ1Rvd3Jvc2c">Добавляем поддержку HSQLDB</a>
+###  ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 7. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFSTJEQ1Rvd3Jvc2c">Добавляем поддержку HSQLDB</a>
 
 #### **Apply 4_10_add_hsqldb.patch**
 > - Переделал `jdbc.initLocation`: IDEA не "тупит", если путь к скрипту полностью прописывать в пропертях.    
