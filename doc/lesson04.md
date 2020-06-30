@@ -84,7 +84,7 @@
 > - [EL implementation provided by the container. In a Java SE you have to add an implementation as dependency to your POM file](http://hibernate.org/validator/documentation/getting-started/#unified-expression-language-el): добавил `javax.el` зависимость со `scope=provided`
 
 #### **Apply 4_8_add_jpa.patch**
-> - **Внимание: при [настройке JPA в IDEA](https://github.com/JavaOPs/topjava/wiki/IDEA#%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-jpa) НЕ скачивайте библиотеку javaee.jar (и любую другую). Все зависимости в проект попадают только через Maven.**
+> - **Внимание: при [настройке JPA в IDEA](https://github.com/JavaOPs/topjava/wiki/IDEA#%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-jpa) ПРОВЕРЬТЕ, что у вас не подтянулсь Java EE 6 libraries. Все зависимости в проект попадают только через Maven, перед настройкой сначала подтяните его зависимости**
 > - Тесты и приложение ломаются. `MealServiceTest` починится после выполнения HW04 (`JpaMealRepository`)
 > - Если вы используете Java 9 и выше, то возникают проблемы с `JAXBException` (пакет `java.xml.bind`). [См. решение](https://www.concretepage.com/forum/thread?qid=531)
 - Дополнительно:
