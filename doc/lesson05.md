@@ -86,6 +86,9 @@
   - <a href="http://stackoverflow.com/questions/8490852/spring-transactional-isolation-propagation">Spring @Transactional - isolation, propagation</a>
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNW0yVWhXcGNPU2M">Профили Maven и Spring</a>
+**ВНИМАНИЕ: пофиксил патчи _5_5_profiles_connection_pool_ и _5_7_spring_data_jpa_. В `spring-db.xml` дублировался `property-placeholder` и `SLF4JBridgeHandler`**  
+[Правильный spring-db.xml](https://raw.githubusercontent.com/JavaWebinar/topjava/55fd0ae9344de485e723197f3785d4f986bf9c0c/src/main/resources/spring/spring-db.xml)
+
 #### Apply 5_5_profiles_connection_pool.patch
 > - `SLF4JBridgeHandler` перенес в профиль `postgres` (если логировать драйвер не нужно, то и он не нужен) 
 > - **Галочка в XML-профиле влияет только на отображение в IDEA и никак не влияет на выполнение кода.**
@@ -120,6 +123,9 @@
 
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 7. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFYVdyMFYxRUR6bWM">Spring Data JPA</a>
+**ВНИМАНИЕ: пофиксил патчи _5_5_profiles_connection_pool_ и _5_7_spring_data_jpa_**  
+[Правильный spring-db.xml](https://raw.githubusercontent.com/JavaWebinar/topjava/master/src/main/resources/spring/spring-db.xml)
+
 #### Apply 5_7_spring_data_jpa.patch
 > - Переименовал классы _Proxy_ на более адекватные _Crud_, убрал _Impl_
 > - В `spring-framework-bom` мы уже задали версию Spring. Убрал из остальных зависимостей.
