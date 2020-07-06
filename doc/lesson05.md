@@ -189,7 +189,7 @@
 
 ## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW05
 
-- 1: Имплементировать `DataJpaMealRepository`.
+- 1: Имплементировать `DataJpaMealRepository` и протестировать через `MealServiceTest`. Приложение чиним в _Optional п.6_
 - 2: Разделить реализации Repository по профилям Spring: `jdbc`, `jpa`, `datajpa` (общее в профилях можно объединять, например, `<beans profile="datajpa,jpa">`).
   - 2.1: Профили выбора DB (`postgres/hsqldb`) и реализации репозитория (`jdbc/datajpa/jpa`) независимы друг от друга, и при запуске приложения (тестов) нужно задать тот, и другой.
   - 2.2: Для интеграции с IDEA не забудьте выставить в `spring-db.xml` справа вверху в `Change Profiles...` профили, например, `datajpa, postgres`.
