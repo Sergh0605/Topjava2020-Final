@@ -222,6 +222,6 @@
 - 6: Проверьте, что в `DataJpaMealRepository` все обращения к DB выполняются в **одной транзакции**.
 - 7: Для 7.1 `достать по id пользователя вместе с его едой` я в `User` добавил `List<Meal> meals`. Учесть, что у юзера может отсутствовать еда. [Ordering a join fetched collection in JPA using JPQL/HQL](http://stackoverflow.com/questions/5903774/ordering-a-join-fetched-collection-in-jpa-using-jpql-hql)
 - 8: Проверьте, что все тесты запускаются из Maven (имена классов тестов удовлетворяют соглашению) и итоги тестов класса выводятся корректно (не копятся). По умолчанию [maven-surefire-plugin](http://maven.apache.org/surefire/maven-surefire-plugin/examples/inclusion-exclusion.html) включает в тесты классы, заканчивающиеся на Test.
-- 9: Аттрибуты `resolver` и `profiles` в одном `@ActiveProfiles` вместе не работают (см. `org.springframework.test.context.support.ActiveProfilesUtils#resolveActiveProfiles`).
+- 9: Атрибуты `resolver` и `profiles` в одном `@ActiveProfiles` вместе не работают (см. `org.springframework.test.context.support.ActiveProfilesUtils#resolveActiveProfiles`).
 `@ActiveProfiles` принимает в качестве параметра строку **либо** массив строк. В тестах можно задавать несколько `@ActiveProfiles` в разных классах, они суммируются
 - 10: `<beans profile=` в конфигурации контекста должны находиться **после** всех остальных объявлений.
