@@ -216,7 +216,8 @@ Hibernate supports following open-source cache implementations out-of-the-box: E
 
 > A `@NamedQuery` или `@Query` подвержены кэшу запросов? Т.е. если мы поставим _USE_QUERY_CACHE_value_="true", будет ли Hibernate их кэшировать?
 
-Чтобы запрос кэшировался, кроме true в конфигурации нужно еще явно выставить запросу _setCacheable_ (http://vladmihalcea.com/2015/06/08/how-does-hibernate-query-cache-work/). По поводу кэширования `@NamedQuery` нашел `@QueryHint`: https://docs.jboss.org/jbossas/docs/Clustering_Guide/5/html/ch04s02s03.html
+Чтобы запрос кэшировался, кроме true в конфигурации [нужно еще явно выставить запросу _setCacheable_](http://vladmihalcea.com/2015/06/08/how-does-hibernate-query-cache-work/).    
+По поводу кэширования `@NamedQuery` нашел [`@QueryHint`](https://docs.jboss.org/jbossas/docs/Clustering_Guide/5/html/ch04s02s03.html)
 
 > Почему messages мы кладем в config и используем system environment? Разве так делают в реальном проекте? Не будешь же вписывать на сервере эти переменные каждый раз, если проект куда-то будет переезжать. Можно по-другому, кроме systemEnvironment['TOPJAVA_ROOT'], задать путь от корня проекта?
 
@@ -260,7 +261,7 @@ Hibernate supports following open-source cache implementations out-of-the-box: E
 
 ### Optional
 - 2.1 Добавить транзакционность (`DataSourceTransactionManager`) в Jdbc-реализации  
-- 2.2 Добавить еще одну роль к юзеру Admin (будет 2 роли: `ROLE_USER, ROLE_ADMIN`).
+- 2.2 Добавить еще одну роль к юзеру Admin (будет 2 роли: `USER, ADMIN`).
 - 2.3 В `JdbcUserRepository` добавить реализацию ролей юзера (добавлять можно одним запросом с JOIN и `RowMapper`, либо двумя запросами (отдельно `users` и отдельно `roles`). [Объяснение SQL JOIN](http://www.skillz.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html)
   - 2.3.1 В реализации `getAll` НЕ делать запрос ролей для каждого юзера (N+1 select)
   - 2.3.2 При save посмотрите на <a href="https://www.mkyong.com/spring/spring-jdbctemplate-batchupdate-example/">batchUpdate()</a>
@@ -302,8 +303,7 @@ Hibernate supports following open-source cache implementations out-of-the-box: E
 - 4: При проблемах с запуском Томкат проверьте запущенные процессы `java`, нет ли в `TOMCAT_HOME\webapps` приложения каталога `topjava`, логи tomcat (нет ли проблем с доступом к каталогам или контекстом Spring)
 - 5: Если создаете неизменяемые List или Map, пользуйтесь `List.of()/ Map.of()`
 - 6: В MealController общую часть `@RequestMapping(value = "/meals")` лучше вынести на уровень класса
-- 7: Не забывайте при реализации `JdbcUserRepository` про `Map.computeIfAbsent`
-- 8: Проверьте `@Transactional(readOnly = true)` сверху `Jdbc..Repository`
-- 9: Проверьте, что `config\messages\app_ru.properties` у вас в кодировке UTF-8 (в любом редакторе/вьюере или при отключенном [Transparent native-to-ascii conversion](https://github.com/JavaOPs/topjava/wiki/IDEA#%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D1%83-utf-8) в IDEA).
-- 10: Учтите, что роли у юзеров можно менять/добавлять/удалять
-- 11: Убедитесь, что все методы UserService корректно работают с юзерами, у которых несколько ролей (**запусти наши тесты для Admin с 2-мя ролями**)
+- 7: Проверьте `@Transactional(readOnly = true)` сверху `Jdbc..Repository`
+- 8: Проверьте, что `config\messages\app_ru.properties` у вас в кодировке UTF-8 (в любом редакторе/вьюере или при отключенном [Transparent native-to-ascii conversion](https://github.com/JavaOPs/topjava/wiki/IDEA#%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D1%83-utf-8) в IDEA).
+- 9: Учтите, что роли у юзеров можно менять/добавлять/удалять
+- 10: Убедитесь, что все методы UserService корректно работают с юзерами, у которых несколько ролей (**запусти наши тесты для Admin с 2-мя ролями**)
