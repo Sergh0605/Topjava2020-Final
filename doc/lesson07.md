@@ -172,7 +172,7 @@ hamcrest-all используется в проверках `RootControllerTest`
 
 - 1: Добавить тесты контроллеров:
   - 1.1 `RootControllerTest.testMeals` для `meals.jsp`
-  - 1.2 `ResourceControllerTest` для `style.css` (проверить `status` и `ContentType`)
+  - 1.2 Сделать `ResourceControllerTest` для `style.css` (проверить `status` и `ContentType`)
 - 2: Реализовать `MealRestController` и протестировать его через `MealRestControllerTest`
   - 2.1 следите, чтобы url в тестах совпадал с параметрами в методе контроллера. Можно добавить логирование `<logger name="org.springframework.web" level="debug"/>` для проверки маршрутизации.
   - 2.2 в параметрах `getBetween` принимать `LocalDateTime` (конвертировать через <a href="http://blog.codeleak.pl/2014/06/spring-4-datetimeformat-with-java-8.html">@DateTimeFormat with Java 8 Date-Time API</a>), пока без проверки на `null` (используя `toLocalDate()/toLocalTime()`, см. Optional п.3). 
