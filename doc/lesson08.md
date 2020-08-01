@@ -23,7 +23,7 @@ https://alvinalexander.com/blog/post/java/determine-current-directory-i-e-where-
 > В `RootControllerTest.testMeals()` сделал проверку через `model().attribute("meals", expectedValue)`.
   Сравнение происходит через `MealTo.equals()`, который мы можем переопределить, т.к. он Transfer Object, не является сущностью (Entity).
 ------------------
-- [Persistent classes implementing equals and hashcode](https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/4.3/html/hibernate_reference_guide/persistent_classes-implementing_equals_and_hashcode): переопределять `equals()/hashCode()` необходимо, если
+- [Persistent classes implementing equals and hashcode](https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html_single/#persistent-classes-equalshashcode): переопределять `equals()/hashCode()` необходимо, если
   - использовать Entity в `Set` (рекомендовано для many ассоциаций), либо как ключи в `HashMap`
   - использовать _reattachment of detached instances_ (те манипулировать одним Entity в нескольких транзакциях/сессиях).
 - Оптимально использовать уникальные неизменяемые бизнес поля, но обычно таких нет, и, чаще всего, используются PK с ограничением, что он может быть `null` у новых объектов и нельзя объекты сравнивать через `equals` в бизнес-логике (например тестах).
