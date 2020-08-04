@@ -140,6 +140,19 @@ GROUP BY u.id
 [ResponseBody and UTF-8](http://web.archive.org/web/20190102203042/http://forum.spring.io/forum/spring-projects/web/74209-responsebody-and-utf-8)
 
 ## ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Ваши вопросы
+> Зачем у нас и UIController'ы, и RestController'ы? То есть в общем случае backend-разработчику недостаточно предоставить REST-api и RestController?
+
+В общем случае нужны и те и другие. REST обычно используют для отдельного UI нарпимер на React или Angular или для интеграции / мобильного приложения. У нас REST контроллеры используются только для тестирования. UI мы используем для нашего приложения на JSP шаблонах. Таких сайтов без богатой UI логики тоже немало. Нарпимер https://javaops.ru/ :)  
+Разница в запросах: 
+  - для UI используются только GET и POST, возвращают либо HTML, либо JSON для Ajax запросов
+  - для REST запросы GET, POST, PUT, DELETE, PATCH и возвращают только данные (обычно JSON)
+  
+ и в способе авторизации: 
+  - для RESТ у нас будет базовая авторизация
+  - UI через cookies
+  
+ Также часто бывают смешанные сайты - где есть и отдельное JS приложение и шаблоны.
+
 > При выполнении тестов через MockMvc никаких изменений на базе не видно, почему оно не сохраняет?
 
 `AbstractControllerTest` аннотируется `@Transactional` - это означает, что тесты идут в транзакции, и после каждого теста JUnit делает rollback базы.
