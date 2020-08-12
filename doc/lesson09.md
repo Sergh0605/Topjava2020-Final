@@ -1,4 +1,4 @@
-# Онлайн-проект <a href="https://github.com/JavaWebinar/topjava">Topjava</a>
+# Онлайн-проект <a href="https://github.com/JavaWebinar/topjava">TopJava</a>
 
 ## <a href="https://drive.google.com/drive/folders/0B9Ye2auQ_NsFVWRGbEw1RjJrMjg">Материалы занятия</a>
 
