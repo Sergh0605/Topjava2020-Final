@@ -42,6 +42,7 @@ Datatables перевели на ajax (`"ajax": {"url": ajaxUrl, ..`), те пр
 - [Validation Group in SpringMVC](https://narmo7.wordpress.com/2014/04/26/how-to-set-up-validation-group-in-springmvc/)
 - [@Validated and Default group](http://web.archive.org/web/20170826153901/http://forum.spring.io/forum/spring-projects/web/117289-validated-s-given-groups-should-consider-default-group-or-not)
 
+> **В этой ветке тесты JDBC, где есть вызов Validation API, не идут.**
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. [Рефакторинг: jQuery конверторы и группы валидации по умолчанию](https://drive.google.com/file/d/1tOMOdmaP5OQ7iynwC77bdXSs-13Ommax)
 **ВНИМАНИЕ! далее патчи идут после `10_03_HW9_datetimepicker` в ветке `master`**
