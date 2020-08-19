@@ -134,7 +134,6 @@ Datatables перевели на ajax (`"ajax": {"url": ajaxUrl, ..`), те пр
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 8. <a href="https://drive.google.com/file/d/1XZXvOThinzPw4EhigAUdo8-MWT_g8wOt">Encoding password. Json READ/WRITE access</a>
 #### Apply 10_13_password_encoding.patch
-> - Если при сохранении пароль пустой, оставляем старый
 > - Добавил утильный метод `UserService.prepareAndSave`
 > - Для InMemory тестов добавил `passwordEncoder` в  `inmemory.xml`
 
